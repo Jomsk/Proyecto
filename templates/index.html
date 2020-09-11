@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/static/css/style.css">
+
+	<title>PROYECTO FINAL</title>
+</head>
+<body>
+	<script src="/static/js/index.js"></script>
+	<div class="Imagenes">
+		<cuadro><img src="/static/images/SelloU2.png"  width="155" height="155"></img></cuadro>
+		<cuadro1><img src="/static/images/EyT.png"  width="145" height="145"></img></cuadro1>
+		<div class="Portada">
+			<h1>UNIVERSIDAD NACIONAL DE CHIMBORAZO</h1>
+			<h2>Facultad de Ingenieria</h2>
+			<h3>Electronica y Telecomunicaciones</h3>
+		</div>
+		<h1>DISPENSADOR DE COMIDA PARA PERRO</h>
+		<h3>Integrantes:</h3>
+		<h3>  -Edgar Aguagallo</h3>
+		<h3>  -Jonathan Obando</h3>
+		<h3>  -Bryan Poaquiza</h3>
+		<h3>  -Jose Velin</h3>
+	</div>
+	<h1 style="color:#ffffff ;" >Sensor de alimento:</h><h id="sensor"></h1>
+
+	<div align="center">
+		<h2 id="aviso" style="color:#ff0000" >Aviso: Sin Alimento</h2>
+		<meter id="Malim" min="0" max="100"
+		low="25" high="65"
+		optimum="100" value="0"></meter>
+		<br></br>
+		<button id="Rec" class="botones"  onclick="Reca()">Recargar</button>
+		<button id="Abrir" class="botones"  onclick="Abrir()">Alimentar</button>
+		<h3>&nbsp; &nbsp;Hora de Activacion 
+			&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+			 Cantidad de Alimento:</h3>
+		<input id="Porcion" type="time" name="date"onchange="ShowTime()">
+
+		<select id="cant" class="botones"onchange="ShowSelected()">
+			<option value="50">Mini	     50g</option>
+			<option value="90">Pequeño	 90g</option>
+			<option value="190">Mediano	 190g</option>
+			<option value="500">Grande	 500g</option>
+			<option value="590">Gigante	 590g</option>
+			<option value="800">Otro	 800g</option>
+			</select>
+	
+	</div>
+
+</body>
+</html>
