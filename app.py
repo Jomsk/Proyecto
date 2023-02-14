@@ -1,4 +1,4 @@
-#!/usr/
+#!/usr/bin/python3.7
 from flask import Flask, render_template, request
 
 #import model
